@@ -17,4 +17,6 @@ def path():
     if request.method == 'GET':
         if status == True:
             return path
+        else:
+            return 500
     abort(404)
